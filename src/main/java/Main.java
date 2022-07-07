@@ -1,6 +1,7 @@
 public class Main {
-    public static void main(String[] args) {
+    public int[] arr() {
         int[] arr = new int[5];
         System.out.println(arr);
+        return arr;
     }
 }
