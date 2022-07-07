@@ -1,0 +1,26 @@
+# Gradle
+.gradle
+/build/
+.gradletasknamecache
+
+# Java
+*.class
+
+# IntelliJ project files
+.idea
+.idea/*.xml
+*.iml
+out
+gen
+build
+rebel.xml
+
+# Compiled Files
+/target/
+**/target
+/example/
+
+# Package Files #
+*.jar
+*.war
+*.ear
