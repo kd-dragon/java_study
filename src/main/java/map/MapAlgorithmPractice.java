@@ -6,6 +6,13 @@ public class MapAlgorithmPractice {
 
     public int pocketmon(int[] nums) {
         // 포켓몬의 종류의 갯수를 구한다.
+        Set<Integer> set = new TreeSet<>();
+        for (int n : nums) {
+            set.add(n);
+        }
+        int n1 = set.size();
+        int n2 = nums.length / 2;
+        /*
         Map<Integer, Integer> map = new HashMap<>();
         for (int n : nums) {
             map.put(n, 0);
@@ -14,7 +21,7 @@ public class MapAlgorithmPractice {
 
         // 배열 크기의 1/2을 구한다.
         int n2 = nums.length / 2;
-
+        */
         // 그 2개의 최소값을 선택한다.
         return Math.min(n1, n2);
     }
@@ -51,6 +58,7 @@ public class MapAlgorithmPractice {
         for(String c : completion) {
             Integer n = players.get(c) - 1;
             if (n == 0) players.remove(c);
+            else players.put(c, n);
         }
 
         //O(1)
